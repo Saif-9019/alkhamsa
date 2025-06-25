@@ -1,91 +1,65 @@
-
 body {
-  font-family: 'Poppins', sans-serif;
   margin: 0;
-  padding: 0;
-  background: #fefcf9;
-  color: #222;
+  font-family: 'Poppins', sans-serif;
+  background-color: #F9F6F1;
+  color: #333333;
 }
 header {
   background-color: #006E51;
   color: white;
-  padding: 10px 20px;
+  padding: 15px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
 }
 .logo {
-  font-size: 24px;
-  font-weight: 600;
+  font-weight: bold;
+  font-size: 1.5em;
 }
 nav ul {
   list-style: none;
   display: flex;
-  gap: 15px;
-  padding: 0;
-  margin: 0;
+  gap: 20px;
 }
 nav ul li a {
   color: white;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
+}
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #C9A44C;
+  color: white;
+}
+.btn {
+  background-color: #006E51;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+  margin-top: 10px;
 }
 section {
   padding: 40px 20px;
   text-align: center;
 }
-.hero {
-  background: #D2AE6D;
-  color: white;
+.courses ul {
+  list-style: none;
+  padding: 0;
 }
-.btn {
-  background: #006E51;
-  color: white;
-  padding: 10px 20px;
-  text-decoration: none;
-  display: inline-block;
-  margin-top: 15px;
-  border-radius: 5px;
+.courses ul li {
+  margin: 10px 0;
 }
 footer {
-  background: #006E51;
+  background-color: #1E2D3B;
   color: white;
   text-align: center;
-  padding: 15px 0;
+  padding: 15px;
 }
-
-.menu-toggle {
-  display: none;
-  font-size: 24px;
-  cursor: pointer;
-  margin-top: 10px;
-}
-
-@media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    background-color: #006E51;
-    width: 100%;
-    padding: 10px 0;
-    position: absolute;
-    top: 80px;
-    left: 0;
-    display: none;
-    z-index: 1000;
-  }
-
-  nav ul.show {
-    display: flex;
-  }
-
-  .menu-toggle {
-    display: block;
-    color: white;
-  }
-
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+.social a {
+  color: #006E51;
+  text-decoration: none;
+  font-weight: bold;
 }
